@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1563D5B1E6E48700066CFAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1563D5A1E6E48700066CFAD /* main.m */; };
+		C1563D5E1E6E48700066CFAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1563D5D1E6E48700066CFAD /* AppDelegate.m */; };
+		C1563D641E6E48700066CFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1563D621E6E48700066CFAD /* Main.storyboard */; };
+		C1563D671E6E48700066CFAD /* LXJView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1563D651E6E48700066CFAD /* LXJView.xcdatamodeld */; };
+		C1563D691E6E48700066CFAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1563D681E6E48700066CFAD /* Assets.xcassets */; };
+		C1563D6C1E6E48700066CFAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1563D6A1E6E48700066CFAD /* LaunchScreen.storyboard */; };
+		C1563D771E6E48700066CFAD /* LXJViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1563D761E6E48700066CFAD /* LXJViewTests.m */; };
+		C1563D821E6E48700066CFAD /* LXJViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1563D811E6E48700066CFAD /* LXJViewUITests.m */; };
+		C1563D911E6E490C0066CFAD /* LXJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1563D901E6E490C0066CFAD /* LXJHomeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1563D731E6E48700066CFAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1563D4E1E6E48700066CFAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1563D551E6E48700066CFAD;
+			remoteInfo = LXJView;
+		};
+		C1563D7E1E6E48700066CFAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1563D4E1E6E48700066CFAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1563D551E6E48700066CFAD;
+			remoteInfo = LXJView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C1563D561E6E48700066CFAD /* LXJView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXJView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1563D5A1E6E48700066CFAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1563D5C1E6E48700066CFAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1563D5D1E6E48700066CFAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1563D631E6E48700066CFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1563D661E6E48700066CFAD /* LXJView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LXJView.xcdatamodel; sourceTree = "<group>"; };
+		C1563D681E6E48700066CFAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1563D6B1E6E48700066CFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1563D6D1E6E48700066CFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1563D721E6E48700066CFAD /* LXJViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXJViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1563D761E6E48700066CFAD /* LXJViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXJViewTests.m; sourceTree = "<group>"; };
+		C1563D781E6E48700066CFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1563D7D1E6E48700066CFAD /* LXJViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXJViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1563D811E6E48700066CFAD /* LXJViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXJViewUITests.m; sourceTree = "<group>"; };
+		C1563D831E6E48700066CFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1563D8F1E6E490C0066CFAD /* LXJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LXJHomeViewController.h; path = ../../LXJHomeViewController.h; sourceTree = "<group>"; };
+		C1563D901E6E490C0066CFAD /* LXJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LXJHomeViewController.m; path = ../../LXJHomeViewController.m; sourceTree = "<group>"; };
+		C1563D981E6E5E340066CFAD /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1563D531E6E48700066CFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1563D6F1E6E48700066CFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1563D7A1E6E48700066CFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1563D4D1E6E48700066CFAD = {
+			isa = PBXGroup;
+			children = (
+				C1563D581E6E48700066CFAD /* LXJView */,
+				C1563D751E6E48700066CFAD /* LXJViewTests */,
+				C1563D801E6E48700066CFAD /* LXJViewUITests */,
+				C1563D571E6E48700066CFAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1563D571E6E48700066CFAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1563D561E6E48700066CFAD /* LXJView.app */,
+				C1563D721E6E48700066CFAD /* LXJViewTests.xctest */,
+				C1563D7D1E6E48700066CFAD /* LXJViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1563D581E6E48700066CFAD /* LXJView */ = {
+			isa = PBXGroup;
+			children = (
+				C1563D5C1E6E48700066CFAD /* AppDelegate.h */,
+				C1563D5D1E6E48700066CFAD /* AppDelegate.m */,
+				C1563D621E6E48700066CFAD /* Main.storyboard */,
+				C1563D921E6E5DA60066CFAD /* Classes */,
+				C1563D591E6E48700066CFAD /* Supporting Files */,
+			);
+			path = LXJView;
+			sourceTree = "<group>";
+		};
+		C1563D591E6E48700066CFAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1563D681E6E48700066CFAD /* Assets.xcassets */,
+				C1563D6D1E6E48700066CFAD /* Info.plist */,
+				C1563D651E6E48700066CFAD /* LXJView.xcdatamodeld */,
+				C1563D5A1E6E48700066CFAD /* main.m */,
+				C1563D981E6E5E340066CFAD /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1563D751E6E48700066CFAD /* LXJViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1563D761E6E48700066CFAD /* LXJViewTests.m */,
+				C1563D781E6E48700066CFAD /* Info.plist */,
+			);
+			path = LXJViewTests;
+			sourceTree = "<group>";
+		};
+		C1563D801E6E48700066CFAD /* LXJViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1563D811E6E48700066CFAD /* LXJViewUITests.m */,
+				C1563D831E6E48700066CFAD /* Info.plist */,
+			);
+			path = LXJViewUITests;
+			sourceTree = "<group>";
+		};
+		C1563D921E6E5DA60066CFAD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C1563D941E6E5DA60066CFAD /* Model */,
+				C1563D971E6E5DA60066CFAD /* View */,
+				C1563D931E6E5DA60066CFAD /* Controller */,
+				C1563D961E6E5DA60066CFAD /* Tool */,
+				C1563D951E6E5DA60066CFAD /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C1563D931E6E5DA60066CFAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1563D8F1E6E490C0066CFAD /* LXJHomeViewController.h */,
+				C1563D901E6E490C0066CFAD /* LXJHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1563D941E6E5DA60066CFAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1563D951E6E5DA60066CFAD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C1563D6A1E6E48700066CFAD /* LaunchScreen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		C1563D961E6E5DA60066CFAD /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		C1563D971E6E5DA60066CFAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1563D551E6E48700066CFAD /* LXJView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1563D861E6E48700066CFAD /* Build configuration list for PBXNativeTarget "LXJView" */;
+			buildPhases = (
+				C1563D521E6E48700066CFAD /* Sources */,
+				C1563D531E6E48700066CFAD /* Frameworks */,
+				C1563D541E6E48700066CFAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXJView;
+			productName = LXJView;
+			productReference = C1563D561E6E48700066CFAD /* LXJView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1563D711E6E48700066CFAD /* LXJViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1563D891E6E48700066CFAD /* Build configuration list for PBXNativeTarget "LXJViewTests" */;
+			buildPhases = (
+				C1563D6E1E6E48700066CFAD /* Sources */,
+				C1563D6F1E6E48700066CFAD /* Frameworks */,
+				C1563D701E6E48700066CFAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1563D741E6E48700066CFAD /* PBXTargetDependency */,
+			);
+			name = LXJViewTests;
+			productName = LXJViewTests;
+			productReference = C1563D721E6E48700066CFAD /* LXJViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1563D7C1E6E48700066CFAD /* LXJViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1563D8C1E6E48700066CFAD /* Build configuration list for PBXNativeTarget "LXJViewUITests" */;
+			buildPhases = (
+				C1563D791E6E48700066CFAD /* Sources */,
+				C1563D7A1E6E48700066CFAD /* Frameworks */,
+				C1563D7B1E6E48700066CFAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1563D7F1E6E48700066CFAD /* PBXTargetDependency */,
+			);
+			name = LXJViewUITests;
+			productName = LXJViewUITests;
+			productReference = C1563D7D1E6E48700066CFAD /* LXJViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1563D4E1E6E48700066CFAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LXJ;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = xiaojuan;
+				TargetAttributes = {
+					C1563D551E6E48700066CFAD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BB478KK38S;
+						ProvisioningStyle = Automatic;
+					};
+					C1563D711E6E48700066CFAD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BB478KK38S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1563D551E6E48700066CFAD;
+					};
+					C1563D7C1E6E48700066CFAD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BB478KK38S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1563D551E6E48700066CFAD;
+					};
+				};
+			};
+			buildConfigurationList = C1563D511E6E48700066CFAD /* Build configuration list for PBXProject "LXJView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1563D4D1E6E48700066CFAD;
+			productRefGroup = C1563D571E6E48700066CFAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1563D551E6E48700066CFAD /* LXJView */,
+				C1563D711E6E48700066CFAD /* LXJViewTests */,
+				C1563D7C1E6E48700066CFAD /* LXJViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1563D541E6E48700066CFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1563D6C1E6E48700066CFAD /* LaunchScreen.storyboard in Resources */,
+				C1563D691E6E48700066CFAD /* Assets.xcassets in Resources */,
+				C1563D641E6E48700066CFAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1563D701E6E48700066CFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1563D7B1E6E48700066CFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1563D521E6E48700066CFAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1563D911E6E490C0066CFAD /* LXJHomeViewController.m in Sources */,
+				C1563D671E6E48700066CFAD /* LXJView.xcdatamodeld in Sources */,
+				C1563D5E1E6E48700066CFAD /* AppDelegate.m in Sources */,
+				C1563D5B1E6E48700066CFAD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1563D6E1E6E48700066CFAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1563D771E6E48700066CFAD /* LXJViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1563D791E6E48700066CFAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1563D821E6E48700066CFAD /* LXJViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1563D741E6E48700066CFAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1563D551E6E48700066CFAD /* LXJView */;
+			targetProxy = C1563D731E6E48700066CFAD /* PBXContainerItemProxy */;
+		};
+		C1563D7F1E6E48700066CFAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1563D551E6E48700066CFAD /* LXJView */;
+			targetProxy = C1563D7E1E6E48700066CFAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1563D621E6E48700066CFAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1563D631E6E48700066CFAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1563D6A1E6E48700066CFAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1563D6B1E6E48700066CFAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1563D841E6E48700066CFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C1563D851E6E48700066CFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1563D871E6E48700066CFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BB478KK38S;
+				GCC_PREFIX_HEADER = LXJView/Prefix.pch;
+				INFOPLIST_FILE = LXJView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoqu.LXJView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1563D881E6E48700066CFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BB478KK38S;
+				GCC_PREFIX_HEADER = LXJView/Prefix.pch;
+				INFOPLIST_FILE = LXJView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoqu.LXJView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C1563D8A1E6E48700066CFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BB478KK38S;
+				INFOPLIST_FILE = LXJViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoqu.LXJViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXJView.app/LXJView";
+			};
+			name = Debug;
+		};
+		C1563D8B1E6E48700066CFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BB478KK38S;
+				INFOPLIST_FILE = LXJViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoqu.LXJViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXJView.app/LXJView";
+			};
+			name = Release;
+		};
+		C1563D8D1E6E48700066CFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BB478KK38S;
+				INFOPLIST_FILE = LXJViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoqu.LXJViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LXJView;
+			};
+			name = Debug;
+		};
+		C1563D8E1E6E48700066CFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BB478KK38S;
+				INFOPLIST_FILE = LXJViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaoqu.LXJViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LXJView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1563D511E6E48700066CFAD /* Build configuration list for PBXProject "LXJView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1563D841E6E48700066CFAD /* Debug */,
+				C1563D851E6E48700066CFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1563D861E6E48700066CFAD /* Build configuration list for PBXNativeTarget "LXJView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1563D871E6E48700066CFAD /* Debug */,
+				C1563D881E6E48700066CFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1563D891E6E48700066CFAD /* Build configuration list for PBXNativeTarget "LXJViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1563D8A1E6E48700066CFAD /* Debug */,
+				C1563D8B1E6E48700066CFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1563D8C1E6E48700066CFAD /* Build configuration list for PBXNativeTarget "LXJViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1563D8D1E6E48700066CFAD /* Debug */,
+				C1563D8E1E6E48700066CFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C1563D651E6E48700066CFAD /* LXJView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C1563D661E6E48700066CFAD /* LXJView.xcdatamodel */,
+			);
+			currentVersion = C1563D661E6E48700066CFAD /* LXJView.xcdatamodel */;
+			path = LXJView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C1563D4E1E6E48700066CFAD /* Project object */;
+}
