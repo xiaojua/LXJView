@@ -118,7 +118,7 @@
         
         /* 给文本添加手势 */
         contentLabel.userInteractionEnabled = YES;//和用户交互的按钮打开
-        UILongPressGestureRecognizer *longPre = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressText:)];
+        UILongPressGestureRecognizer *longPre = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(onlongPressText:)];
         [contentLabel addGestureRecognizer:longPre];
         contentLabel.frame = CGRectMake(0, 0, finalSize.width, finalSize.height);
         bodyAddH = 0;
@@ -194,9 +194,9 @@
             [imageView sd_setImageWithURL:[NSURL URLWithString:_imageArr[0]]];
             [_imageViewArr addObject:imageView];
             //加手势
-            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(pressImageView:)];
+            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(onpressImageView:)];
             [imageView addGestureRecognizer:tap];
-            UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressImageView:)];
+            UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(onlongPressImageView:)];
             [imageView addGestureRecognizer:longPress];
             
         }else if (_imageArr.count == 4){
@@ -208,9 +208,9 @@
                 [imageView sd_setImageWithURL:[NSURL URLWithString:_imageArr[i]]];
                 [_imageViewArr addObject:imageView];
                 
-                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(pressImageView:)];
+                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(onpressImageView:)];
                 [imageView addGestureRecognizer:tap];
-                UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressImageView:)];
+                UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(onlongPressImageView:)];
                 [imageView addGestureRecognizer:longPress];
             }
         }else{
@@ -222,9 +222,9 @@
                 [imageView sd_setImageWithURL:[NSURL URLWithString:_imageArr[i]]];
                 [_imageViewArr addObject:imageView];
                 
-                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(pressImageView:)];
+                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(onpressImageView:)];
                 [imageView addGestureRecognizer:tap];
-                UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressImageView:)];
+                UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(onlongPressImageView:)];
                 [imageView addGestureRecognizer:longPress];
             }
         }
@@ -378,47 +378,47 @@
 
 #pragma mark - 使用delegate
 /* 长按 */
-- (void)longPressText:(UILongPressGestureRecognizer *)sender{
+- (void)onlongPressText:(UILongPressGestureRecognizer *)sender{
     NSLog(@"长按文字");
     if (sender.state == UIGestureRecognizerStateBegan) {
         //判断代理属性是否响应的是此代理方法
-        if (_delegate && [_delegate respondsToSelector:@selector(longPressText:onDynamicCell:)]) {
+        if (_delegate && [_delegate respondsToSelector:@selector(onlongPressText:onDynamicCell:)]) {
             //把响应的文字传过去
             TTTAttributedLabel *label = (TTTAttributedLabel *)sender.view;
-            [_delegate longPressText:label.text onDynamicCell:self];
+            [_delegate onlongPressText:label.text onDynamicCell:self];
         }
     }
 }
 /* 更多或收起 */
 - (void)showMore{
     if ([_moreBtn.titleLabel.text isEqualToString:@"全文"]) {
-        if (_delegate && [_delegate respondsToSelector:@selector(pressMoreBtnOnDynamicCell:)]) {
+        if (_delegate && [_delegate respondsToSelector:@selector(onpressMoreBtnOnDynamicCell:)]) {
             _data.isOpenContent = YES;
-            [_delegate pressMoreBtnOnDynamicCell:self];
+            [_delegate onpressMoreBtnOnDynamicCell:self];
         }
     }else if ([_moreBtn.titleLabel.text isEqualToString:@"收起"]){
-        if (_delegate && [_delegate respondsToSelector:@selector(pressMoreBtnOnDynamicCell:)]) {
+        if (_delegate && [_delegate respondsToSelector:@selector(onpressMoreBtnOnDynamicCell:)]) {
             _data.isOpenContent = NO;
-            [_delegate pressMoreBtnOnDynamicCell:self];
+            [_delegate onpressMoreBtnOnDynamicCell:self];
         }
     }
 }
 /* 长按图片imageView */
-- (void)longPressImageView:(UILongPressGestureRecognizer *)sender{
+- (void)onlongPressImageView:(UILongPressGestureRecognizer *)sender{
     NSLog(@"长按图片");
     if (sender.state == UIGestureRecognizerStateBegan) {
-        if (_delegate && [_delegate respondsToSelector:@selector(longPressText:onDynamicCell:)]) {
+        if (_delegate && [_delegate respondsToSelector:@selector(onlongPressText:onDynamicCell:)]) {
             UIImageView *imageView = (UIImageView *)sender.view;
-            [_delegate longPressImageView:imageView onDynamicCell:self];
+            [_delegate onlongPressImageView:imageView onDynamicCell:self];
         }
     }
 }
 /* 点击图片imageView */
-- (void)pressImageView:(UITapGestureRecognizer *)sender{
+- (void)onpressImageView:(UITapGestureRecognizer *)sender{
     NSLog(@"点击图片");
-    if (_delegate && [_delegate respondsToSelector:@selector(pressImageView:onDynamicCell:)]) {
+    if (_delegate && [_delegate respondsToSelector:@selector(onpressImageView:onDynamicCell:)]) {
         UIImageView *imageView = (UIImageView *)sender.view;
-        [_delegate pressImageView:imageView onDynamicCell:self];
+        [_delegate onpressImageView:imageView onDynamicCell:self];
     }
 }
 

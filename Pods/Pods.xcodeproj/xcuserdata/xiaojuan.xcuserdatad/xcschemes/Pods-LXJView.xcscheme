@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '13E367D9A28C873F99C5C7F2F0259D44'
+               BlueprintIdentifier = '5EFD1C97F9E15E2DDE6C55E05C61BEFE'
                BlueprintName = 'Pods-LXJView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-LXJView.a'>

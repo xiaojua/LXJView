@@ -12,9 +12,21 @@
 #import "MJRefresh.h"
 #import "LXJViewItem.h"
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "LCActionSheet.h"
+#import "IDMPhotoBrowser.h"
 
 
-@interface LXJZoneView ()<UITableViewDelegate, UITableViewDataSource, LXJDynamicCellDelegate>
+#define Tag_MyReplySheetShow 0x01
+#define Tag_LongPressTextSheetShow 0x02
+#define Tag_LongPressPicSheetShow 0x03
+#define Tag_CoverViewSheetShow 0x04
+#define Tag_LongPressShareUrlSheetShow 0x05
+#define Tag_CopyMyReplySheetShow 0x06
+
+
+
+
+@interface LXJZoneView ()<UITableViewDelegate, UITableViewDataSource, LXJDynamicCellDelegate, LCActionSheetDelegate, IDMPhotoBrowserDelegate>
 
 @property (nonatomic, strong) UITableView *zoneTableView;
 @property (nonatomic, strong) NSMutableArray *dynamics;
@@ -122,27 +134,144 @@
     [_zoneTableView headerEndRefreshing];
 }
 - (void)dynamicTableViewFooterRefresh{
-    [_zoneTableView footerEndRefreshing];
     [_zoneTableView reloadData];
+    [_zoneTableView footerEndRefreshing];
 }
 
 #pragma mark - LXJDynamicCellDelegate
 /* 打开全文收起全文 */
-- (void)pressMoreBtnOnDynamicCell:(LXJDynamicCell *)cell{
+- (void)onpressMoreBtnOnDynamicCell:(LXJDynamicCell *)cell{
     NSIndexPath *indexPath = [_zoneTableView indexPathForCell:cell];
     NSLog(@"%@",indexPath);
     NSMutableArray *arr = [NSMutableArray array];
     [arr addObject:indexPath];
     [_zoneTableView reloadRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationAutomatic];
 }
-- (void)longPressText:(NSString *)text onDynamicCell:(LXJDynamicCell *)cell{
+/* 长按文字 */
+- (void)onlongPressText:(NSString *)text onDynamicCell:(LXJDynamicCell *)cell{
+    
+    LCActionSheet *actionSheet = [LCActionSheet sheetWithTitle:nil buttonTitles:@[@"收藏",@"转发到聊天",@"转发到公告"] redButtonIndex:3 delegate:self];
+    actionSheet.tag = Tag_LongPressTextSheetShow;
+    [actionSheet show];
+}
+
+/* 长按图片 */
+- (void)onlongPressImageView:(UIImageView *)imageView onDynamicCell:(LXJDynamicCell *)cell{
+    LCActionSheet *actionSheet = [LCActionSheet sheetWithTitle:nil buttonTitles:@[@"保存图片",@"转发到聊天",@"转发到公告"] redButtonIndex:-1 delegate:self];
+    actionSheet.tag = Tag_LongPressPicSheetShow;
+    actionSheet.userObj = imageView;
+    actionSheet.userObj2 = cell;
+    [actionSheet show];
+}
+/* 点击图片 */
+- (void)onpressImageView:(UIImageView *)imageView onDynamicCell:(LXJDynamicCell *)cell{
+    LXJViewItem *item = cell.data;
+    if (item == nil) {
+        return;
+    }
+    
+    NSMutableArray *picArr = [NSMutableArray array];
+    for (int i=0; i<[item.imgs count]; i++) {
+        NSURL *urlStr = [NSURL URLWithString:item.imgs[i]];
+        IDMPhoto *photo = [IDMPhoto photoWithURL:urlStr];
+        [picArr addObject:photo];
+    }
+    
+    IDMPhotoBrowser *browser = [[IDMPhotoBrowser alloc]initWithPhotos:picArr animatedFromView:imageView];
+    [browser setInitialPageIndex:imageView.tag];
+    browser.delegate = self;
+//    browser.doneButtonImage = [UIImage imageNamed:@"重拍"];//自己定返回按钮图片
+    browser.displayActionButton = YES;
+    browser.displayArrowButton = NO;//设置滚动图片时左右的箭头
+    browser.displayCounterLabel = YES;
+    browser.actionButtonTitles = @[@"转发到聊天",@"转发到公告",@"收藏",@"保存到手机" ];
+    [_hvc presentViewController:browser animated:YES completion:nil];
+    
+     
+}
+
+#pragma mark - LCActionSheetDelegate
+- (void)actionSheet:(LCActionSheet *)actionSheet didClickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSInteger tag = actionSheet.tag;
+    if (tag == Tag_LongPressTextSheetShow) {
+        NSLog(@"长按文字后点中了某个按钮的下标：%ld", buttonIndex);
+    }else if (tag == Tag_LongPressPicSheetShow){
+        NSLog(@"长按图片点中了某个按钮的下标：%ld", buttonIndex);
+        if (buttonIndex == 0) {
+            UIImageView *imgView = (UIImageView *)actionSheet.userObj;
+            UIImage *img = imgView.image;
+            //需要在infoplist中加入Privacy - Photo Library Usage Description这个key
+            [self saveImageToPhotoAlbum:img];
+            
+        }
+        
+    }
+    
+    
     
 }
-- (void)longPressImageView:(UIImageView *)imageView onDynamicCell:(LXJDynamicCell *)cell{
+#pragma mark - 保存图片到手机
+- (void)saveImageToPhotoAlbum:(UIImage *)image{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        UIImageWriteToSavedPhotosAlbum(image, self, @selector(saveImageWithImage:didfinishWithError:contextInfo:), nil);
+    });
+}
+- (void)saveImageWithImage:(UIImage *)image didfinishWithError:(NSError *)error contextInfo:(void *)contextInfo
+{
+    if (error) {
+        NSLog(@"%@", error.description);
+    }else{
+        NSLog(@"保存成功");
+        [self showMessage:@"保存成功"];
+        
+    }
+}
+
+#pragma mark - 图片浏览器代理
+- (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser didDismissActionSheetWithButtonIndex:(NSUInteger)buttonIndex photoIndex:(NSUInteger)photoIndex{
+    NSLog(@"1111");
+    switch (buttonIndex) {
+        case 0:
+            NSLog(@"0");
+            break;
+        case 1:
+            NSLog(@"1");
+            break;
+        case 2:
+            NSLog(@"2");
+            break;
+            
+        default:
+            break;
+    }
+}
+- (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser didPressUseButtonAtIndex:(NSUInteger)index{
+    NSLog(@"2222");
+    switch (index) {
+        case 0:
+            NSLog(@"00");
+            break;
+        case 1:
+            NSLog(@"11");
+            break;
+        case 2:
+            NSLog(@"22");
+            break;
+            
+        default:
+            break;
+    }
+}
+//左右浏览图片时捕捉当前图片的下标
+- (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser didShowPhotoAtIndex:(NSUInteger)index{
+    NSLog(@"第%ld张图片已经显示", index+1);
+    
+    
     
 }
-- (void)pressImageView:(UIImageView *)imageView onDynamicCell:(LXJDynamicCell *)cell{
-    
+//浏览完图片最后一张消失的图片下标
+- (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser didDismissAtPageIndex:(NSUInteger)index{
+    NSLog(@"第%ld张图片已经消失", index+1);
 }
 
 @end

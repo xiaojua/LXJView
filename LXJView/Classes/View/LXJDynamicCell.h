@@ -13,13 +13,13 @@
 @protocol LXJDynamicCellDelegate <NSObject>
 
 /* 长按文字 */
-- (void)longPressText:(NSString *)text onDynamicCell:(LXJDynamicCell *)cell;
+- (void)onlongPressText:(NSString *)text onDynamicCell:(LXJDynamicCell *)cell;
 /* 按下更多或者收起按钮 */
-- (void)pressMoreBtnOnDynamicCell:(LXJDynamicCell *)cell;
+- (void)onpressMoreBtnOnDynamicCell:(LXJDynamicCell *)cell;
 /* 长按图片ImageView */
-- (void)longPressImageView:(UIImageView *)imageView onDynamicCell:(LXJDynamicCell *)cell;
+- (void)onlongPressImageView:(UIImageView *)imageView onDynamicCell:(LXJDynamicCell *)cell;
 /* 点击图片ImageView */
-- (void)pressImageView:(UIImageView *)imageView onDynamicCell:(LXJDynamicCell *)cell;
+- (void)onpressImageView:(UIImageView *)imageView onDynamicCell:(LXJDynamicCell *)cell;
 
 
 

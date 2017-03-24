@@ -1,5 +1,5 @@
 target 'LXJView' do
-	pod 'SDWebImage'
-	pod 'Masonry'
 	
+	pod 'Masonry'
+        
 end
