@@ -407,7 +407,7 @@
 - (void)onlongPressImageView:(UILongPressGestureRecognizer *)sender{
     NSLog(@"长按图片");
     if (sender.state == UIGestureRecognizerStateBegan) {
-        if (_delegate && [_delegate respondsToSelector:@selector(onlongPressText:onDynamicCell:)]) {
+        if (_delegate && [_delegate respondsToSelector:@selector(onlongPressImageView:onDynamicCell:)]) {
             UIImageView *imageView = (UIImageView *)sender.view;
             [_delegate onlongPressImageView:imageView onDynamicCell:self];
         }
@@ -421,6 +421,13 @@
         [_delegate onpressImageView:imageView onDynamicCell:self];
     }
 }
+#pragma mark - TTTAttributedLabelDelegate
+- (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url{
+    if (_delegate && [_delegate respondsToSelector:@selector(onpressUrl:)]) {
+        [_delegate onpressUrl:url];
+    }
+}
+
 
 - (CGSize)sizeThatFits:(CGSize)size{
     return CGSizeMake(SCREEN_W, _zanBarView.frame.size.height+_zanBarView.frame.origin.y+10);

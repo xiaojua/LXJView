@@ -193,7 +193,6 @@
 		C1B6D4221E7155C200EDAF86 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B6D41C1E7155C200EDAF86 /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		C1B6D4231E7155C200EDAF86 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C1B6D41D1E7155C200EDAF86 /* LICENSE */; };
 		C1B6D4241E7155C200EDAF86 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C1B6D41E1E7155C200EDAF86 /* README.md */; };
-		C1B6D4271E7245C700EDAF86 /* LXJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B6D4261E7245C700EDAF86 /* LXJViewController.m */; };
 		C1B6D4B61E7A3C8B00EDAF86 /* bgImage_HL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B6D4B21E7A3C8B00EDAF86 /* bgImage_HL@2x.png */; };
 		C1B6D4B71E7A3C8B00EDAF86 /* cellLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B6D4B31E7A3C8B00EDAF86 /* cellLine@2x.png */; };
 		C1B6D4B81E7A3C8B00EDAF86 /* LCActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B6D4B51E7A3C8B00EDAF86 /* LCActionSheet.m */; };
@@ -201,6 +200,31 @@
 		C1FFF4ED1E83A70900F765C0 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF4E91E83A70900F765C0 /* MBProgressHUD.bundle */; };
 		C1FFF4EE1E83A70900F765C0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF4EB1E83A70900F765C0 /* MBProgressHUD.m */; };
 		C1FFF4F41E83BCDD00F765C0 /* UIView+LXJHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF4F31E83BCDD00F765C0 /* UIView+LXJHUD.m */; };
+		C1FFF5811E84F05F00F765C0 /* .name in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5661E84F05F00F765C0 /* .name */; };
+		C1FFF5821E84F05F00F765C0 /* encodings.xml in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5671E84F05F00F765C0 /* encodings.xml */; };
+		C1FFF5831E84F05F00F765C0 /* focusDeatail.iml in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5681E84F05F00F765C0 /* focusDeatail.iml */; };
+		C1FFF5841E84F05F00F765C0 /* misc.xml in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5691E84F05F00F765C0 /* misc.xml */; };
+		C1FFF5851E84F05F00F765C0 /* modules.xml in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF56A1E84F05F00F765C0 /* modules.xml */; };
+		C1FFF5861E84F05F00F765C0 /* scope_settings.xml in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF56C1E84F05F00F765C0 /* scope_settings.xml */; };
+		C1FFF5871E84F05F00F765C0 /* vcs.xml in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF56D1E84F05F00F765C0 /* vcs.xml */; };
+		C1FFF5881E84F05F00F765C0 /* workspace.xml in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF56E1E84F05F00F765C0 /* workspace.xml */; };
+		C1FFF5891E84F05F00F765C0 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5701E84F05F00F765C0 /* style.css */; };
+		C1FFF58A1E84F05F00F765C0 /* focusdeatail.html in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5711E84F05F00F765C0 /* focusdeatail.html */; };
+		C1FFF58B1E84F05F00F765C0 /* focusdeatailOld.html in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5721E84F05F00F765C0 /* focusdeatailOld.html */; };
+		C1FFF58C1E84F05F00F765C0 /* company_shijian.png in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5741E84F05F00F765C0 /* company_shijian.png */; };
+		C1FFF58D1E84F05F00F765C0 /* focus_dianzi.png in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5751E84F05F00F765C0 /* focus_dianzi.png */; };
+		C1FFF58E1E84F05F00F765C0 /* focus_wenzhang.png in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5761E84F05F00F765C0 /* focus_wenzhang.png */; };
+		C1FFF58F1E84F05F00F765C0 /* focus_xiangguan.png in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5771E84F05F00F765C0 /* focus_xiangguan.png */; };
+		C1FFF5901E84F05F00F765C0 /* focus_yidong.png in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5781E84F05F00F765C0 /* focus_yidong.png */; };
+		C1FFF5911E84F05F00F765C0 /* guanzhushijian.png in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF5791E84F05F00F765C0 /* guanzhushijian.png */; };
+		C1FFF5921E84F05F00F765C0 /* laohe.png in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF57A1E84F05F00F765C0 /* laohe.png */; };
+		C1FFF5931E84F05F00F765C0 /* jquery-2.1.3.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF57C1E84F05F00F765C0 /* jquery-2.1.3.min.js */; };
+		C1FFF5941E84F05F00F765C0 /* WebViewJavascriptBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF57E1E84F05F00F765C0 /* WebViewJavascriptBridge.js */; };
+		C1FFF5951E84F05F00F765C0 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = C1FFF57F1E84F05F00F765C0 /* WebViewJavascriptBridge.js.txt */; };
+		C1FFF5961E84F05F00F765C0 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF5801E84F05F00F765C0 /* WebViewJavascriptBridge.m */; };
+		C1FFF5991E84F12D00F765C0 /* LXJBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF5981E84F12D00F765C0 /* LXJBasicViewController.m */; };
+		C1FFF59C1E84F26C00F765C0 /* LXJBasicWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF59B1E84F26C00F765C0 /* LXJBasicWebViewController.m */; };
+		C1FFF59F1E84F45400F765C0 /* LXJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF59E1E84F45400F765C0 /* LXJWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -512,8 +536,6 @@
 		C1B6D41C1E7155C200EDAF86 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		C1B6D41D1E7155C200EDAF86 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C1B6D41E1E7155C200EDAF86 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C1B6D4251E7245C700EDAF86 /* LXJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXJViewController.h; sourceTree = "<group>"; };
-		C1B6D4261E7245C700EDAF86 /* LXJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXJViewController.m; sourceTree = "<group>"; };
 		C1B6D4B21E7A3C8B00EDAF86 /* bgImage_HL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgImage_HL@2x.png"; sourceTree = "<group>"; };
 		C1B6D4B31E7A3C8B00EDAF86 /* cellLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellLine@2x.png"; sourceTree = "<group>"; };
 		C1B6D4B41E7A3C8B00EDAF86 /* LCActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCActionSheet.h; sourceTree = "<group>"; };
@@ -525,6 +547,35 @@
 		C1FFF4EB1E83A70900F765C0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		C1FFF4F21E83BCDD00F765C0 /* UIView+LXJHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LXJHUD.h"; sourceTree = "<group>"; };
 		C1FFF4F31E83BCDD00F765C0 /* UIView+LXJHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXJHUD.m"; sourceTree = "<group>"; };
+		C1FFF5661E84F05F00F765C0 /* .name */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .name; sourceTree = "<group>"; };
+		C1FFF5671E84F05F00F765C0 /* encodings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = encodings.xml; sourceTree = "<group>"; };
+		C1FFF5681E84F05F00F765C0 /* focusDeatail.iml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = focusDeatail.iml; sourceTree = "<group>"; };
+		C1FFF5691E84F05F00F765C0 /* misc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = misc.xml; sourceTree = "<group>"; };
+		C1FFF56A1E84F05F00F765C0 /* modules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = modules.xml; sourceTree = "<group>"; };
+		C1FFF56C1E84F05F00F765C0 /* scope_settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = scope_settings.xml; sourceTree = "<group>"; };
+		C1FFF56D1E84F05F00F765C0 /* vcs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vcs.xml; sourceTree = "<group>"; };
+		C1FFF56E1E84F05F00F765C0 /* workspace.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = workspace.xml; sourceTree = "<group>"; };
+		C1FFF5701E84F05F00F765C0 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		C1FFF5711E84F05F00F765C0 /* focusdeatail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = focusdeatail.html; sourceTree = "<group>"; };
+		C1FFF5721E84F05F00F765C0 /* focusdeatailOld.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = focusdeatailOld.html; sourceTree = "<group>"; };
+		C1FFF5741E84F05F00F765C0 /* company_shijian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = company_shijian.png; sourceTree = "<group>"; };
+		C1FFF5751E84F05F00F765C0 /* focus_dianzi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus_dianzi.png; sourceTree = "<group>"; };
+		C1FFF5761E84F05F00F765C0 /* focus_wenzhang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus_wenzhang.png; sourceTree = "<group>"; };
+		C1FFF5771E84F05F00F765C0 /* focus_xiangguan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus_xiangguan.png; sourceTree = "<group>"; };
+		C1FFF5781E84F05F00F765C0 /* focus_yidong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus_yidong.png; sourceTree = "<group>"; };
+		C1FFF5791E84F05F00F765C0 /* guanzhushijian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guanzhushijian.png; sourceTree = "<group>"; };
+		C1FFF57A1E84F05F00F765C0 /* laohe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laohe.png; sourceTree = "<group>"; };
+		C1FFF57C1E84F05F00F765C0 /* jquery-2.1.3.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.3.min.js"; sourceTree = "<group>"; };
+		C1FFF57D1E84F05F00F765C0 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		C1FFF57E1E84F05F00F765C0 /* WebViewJavascriptBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = WebViewJavascriptBridge.js; sourceTree = "<group>"; };
+		C1FFF57F1E84F05F00F765C0 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
+		C1FFF5801E84F05F00F765C0 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		C1FFF5971E84F12D00F765C0 /* LXJBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXJBasicViewController.h; sourceTree = "<group>"; };
+		C1FFF5981E84F12D00F765C0 /* LXJBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXJBasicViewController.m; sourceTree = "<group>"; };
+		C1FFF59A1E84F26C00F765C0 /* LXJBasicWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXJBasicWebViewController.h; sourceTree = "<group>"; };
+		C1FFF59B1E84F26C00F765C0 /* LXJBasicWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXJBasicWebViewController.m; sourceTree = "<group>"; };
+		C1FFF59D1E84F45400F765C0 /* LXJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXJWebViewController.h; sourceTree = "<group>"; };
+		C1FFF59E1E84F45400F765C0 /* LXJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXJWebViewController.m; sourceTree = "<group>"; };
 		CBE0FAD0A3E27FC9A51E3BB7 /* Pods-LXJView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXJView.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXJView/Pods-LXJView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -653,8 +704,12 @@
 			children = (
 				C1563D8F1E6E490C0066CFAD /* LXJHomeViewController.h */,
 				C1563D901E6E490C0066CFAD /* LXJHomeViewController.m */,
-				C1B6D4251E7245C700EDAF86 /* LXJViewController.h */,
-				C1B6D4261E7245C700EDAF86 /* LXJViewController.m */,
+				C1FFF5971E84F12D00F765C0 /* LXJBasicViewController.h */,
+				C1FFF5981E84F12D00F765C0 /* LXJBasicViewController.m */,
+				C1FFF59A1E84F26C00F765C0 /* LXJBasicWebViewController.h */,
+				C1FFF59B1E84F26C00F765C0 /* LXJBasicWebViewController.m */,
+				C1FFF59D1E84F45400F765C0 /* LXJWebViewController.h */,
+				C1FFF59E1E84F45400F765C0 /* LXJWebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -701,6 +756,7 @@
 		C1563DA21E6EA2660066CFAD /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				C1FFF5641E84F05F00F765C0 /* jsBrage */,
 				C1FFF4E51E83A70900F765C0 /* HUD */,
 				C1B114841E8367A700041B25 /* IDMPhotoBroswer */,
 				C1B114531E83678B00041B25 /* SDWebImage */,
@@ -1138,6 +1194,76 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		C1FFF5641E84F05F00F765C0 /* jsBrage */ = {
+			isa = PBXGroup;
+			children = (
+				C1FFF5651E84F05F00F765C0 /* .idea */,
+				C1FFF56F1E84F05F00F765C0 /* css */,
+				C1FFF5711E84F05F00F765C0 /* focusdeatail.html */,
+				C1FFF5721E84F05F00F765C0 /* focusdeatailOld.html */,
+				C1FFF5731E84F05F00F765C0 /* imgs */,
+				C1FFF57B1E84F05F00F765C0 /* js */,
+				C1FFF57D1E84F05F00F765C0 /* WebViewJavascriptBridge.h */,
+				C1FFF57E1E84F05F00F765C0 /* WebViewJavascriptBridge.js */,
+				C1FFF57F1E84F05F00F765C0 /* WebViewJavascriptBridge.js.txt */,
+				C1FFF5801E84F05F00F765C0 /* WebViewJavascriptBridge.m */,
+			);
+			path = jsBrage;
+			sourceTree = "<group>";
+		};
+		C1FFF5651E84F05F00F765C0 /* .idea */ = {
+			isa = PBXGroup;
+			children = (
+				C1FFF5661E84F05F00F765C0 /* .name */,
+				C1FFF5671E84F05F00F765C0 /* encodings.xml */,
+				C1FFF5681E84F05F00F765C0 /* focusDeatail.iml */,
+				C1FFF5691E84F05F00F765C0 /* misc.xml */,
+				C1FFF56A1E84F05F00F765C0 /* modules.xml */,
+				C1FFF56B1E84F05F00F765C0 /* scopes */,
+				C1FFF56D1E84F05F00F765C0 /* vcs.xml */,
+				C1FFF56E1E84F05F00F765C0 /* workspace.xml */,
+			);
+			path = .idea;
+			sourceTree = "<group>";
+		};
+		C1FFF56B1E84F05F00F765C0 /* scopes */ = {
+			isa = PBXGroup;
+			children = (
+				C1FFF56C1E84F05F00F765C0 /* scope_settings.xml */,
+			);
+			path = scopes;
+			sourceTree = "<group>";
+		};
+		C1FFF56F1E84F05F00F765C0 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				C1FFF5701E84F05F00F765C0 /* style.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		C1FFF5731E84F05F00F765C0 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				C1FFF5741E84F05F00F765C0 /* company_shijian.png */,
+				C1FFF5751E84F05F00F765C0 /* focus_dianzi.png */,
+				C1FFF5761E84F05F00F765C0 /* focus_wenzhang.png */,
+				C1FFF5771E84F05F00F765C0 /* focus_xiangguan.png */,
+				C1FFF5781E84F05F00F765C0 /* focus_yidong.png */,
+				C1FFF5791E84F05F00F765C0 /* guanzhushijian.png */,
+				C1FFF57A1E84F05F00F765C0 /* laohe.png */,
+			);
+			path = imgs;
+			sourceTree = "<group>";
+		};
+		C1FFF57B1E84F05F00F765C0 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				C1FFF57C1E84F05F00F765C0 /* jquery-2.1.3.min.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1252,6 +1378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1563E0C1E6EA2820066CFAD /* zem13.png in Resources */,
+				C1FFF58D1E84F05F00F765C0 /* focus_dianzi.png in Resources */,
 				C1563E2F1E6EA2820066CFAD /* zem45.png in Resources */,
 				C1563E481E6EA2820066CFAD /* zem68.png in Resources */,
 				C1563E4F1E6EA2820066CFAD /* zem74.png in Resources */,
@@ -1266,8 +1393,10 @@
 				C1B114741E83678B00041B25 /* LICENSE in Resources */,
 				C1563E141E6EA2820066CFAD /* zem20.png in Resources */,
 				C1563E2C1E6EA2820066CFAD /* zem42.png in Resources */,
+				C1FFF5851E84F05F00F765C0 /* modules.xml in Resources */,
 				C1563E231E6EA2820066CFAD /* zem34.png in Resources */,
 				C1563E4E1E6EA2820066CFAD /* zem73.png in Resources */,
+				C1FFF5921E84F05F00F765C0 /* laohe.png in Resources */,
 				C1563E5B1E6EA2820066CFAD /* expressionImage_custom.plist in Resources */,
 				C1563E051E6EA2820066CFAD /* 3.gif in Resources */,
 				C1B6D40B1E714AD900EDAF86 /* MJRefresh.bundle in Resources */,
@@ -1278,6 +1407,7 @@
 				C1B112AB1E825DD200041B25 /* pop-osx-Info.plist in Resources */,
 				C1563D6C1E6E48700066CFAD /* LaunchScreen.storyboard in Resources */,
 				C1563E341E6EA2820066CFAD /* zem5.png in Resources */,
+				C1FFF5831E84F05F00F765C0 /* focusDeatail.iml in Resources */,
 				C1563E221E6EA2820066CFAD /* zem33.png in Resources */,
 				C1563E5A1E6EA2820066CFAD /* expressionImage.plist in Resources */,
 				C1563E371E6EA2820066CFAD /* zem52.png in Resources */,
@@ -1289,25 +1419,32 @@
 				C1563E321E6EA2820066CFAD /* zem48.png in Resources */,
 				C1563E441E6EA2820066CFAD /* zem64.png in Resources */,
 				C1563E421E6EA2820066CFAD /* zem62.png in Resources */,
+				C1FFF5841E84F05F00F765C0 /* misc.xml in Resources */,
 				C1563E541E6EA2820066CFAD /* zem79.png in Resources */,
 				C1563E451E6EA2820066CFAD /* zem65.png in Resources */,
 				C1563E3B1E6EA2820066CFAD /* zem56.png in Resources */,
 				C1B6D4231E7155C200EDAF86 /* LICENSE in Resources */,
 				C1563E0A1E6EA2820066CFAD /* zem11.png in Resources */,
+				C1FFF58C1E84F05F00F765C0 /* company_shijian.png in Resources */,
 				C1563E201E6EA2820066CFAD /* zem31.png in Resources */,
 				C1563E111E6EA2820066CFAD /* zem18.png in Resources */,
 				C1563E281E6EA2820066CFAD /* zem39.png in Resources */,
 				C1563E2D1E6EA2820066CFAD /* zem43.png in Resources */,
 				C1563E1D1E6EA2820066CFAD /* zem29.png in Resources */,
+				C1FFF58B1E84F05F00F765C0 /* focusdeatailOld.html in Resources */,
 				C1563E381E6EA2820066CFAD /* zem53.png in Resources */,
 				C1563E0D1E6EA2820066CFAD /* zem14.png in Resources */,
 				C1563E351E6EA2820066CFAD /* zem50.png in Resources */,
 				C1563E3A1E6EA2820066CFAD /* zem55.png in Resources */,
 				C1563E041E6EA2820066CFAD /* 2.gif in Resources */,
+				C1FFF5951E84F05F00F765C0 /* WebViewJavascriptBridge.js.txt in Resources */,
 				C1563E401E6EA2820066CFAD /* zem60.png in Resources */,
+				C1FFF5821E84F05F00F765C0 /* encodings.xml in Resources */,
 				C1563E171E6EA2820066CFAD /* zem23.png in Resources */,
+				C1FFF58F1E84F05F00F765C0 /* focus_xiangguan.png in Resources */,
 				C1563E091E6EA2820066CFAD /* zem10000.png in Resources */,
 				C1563E551E6EA2820066CFAD /* zem8.png in Resources */,
+				C1FFF5861E84F05F00F765C0 /* scope_settings.xml in Resources */,
 				C1563E1E1E6EA2820066CFAD /* zem3.png in Resources */,
 				C1563E311E6EA2820066CFAD /* zem47.png in Resources */,
 				C1563E331E6EA2820066CFAD /* zem49.png in Resources */,
@@ -1319,31 +1456,40 @@
 				C1FFF4ED1E83A70900F765C0 /* MBProgressHUD.bundle in Resources */,
 				C1563E361E6EA2820066CFAD /* zem51.png in Resources */,
 				C1563E431E6EA2820066CFAD /* zem63.png in Resources */,
+				C1FFF5911E84F05F00F765C0 /* guanzhushijian.png in Resources */,
 				C1563E251E6EA2820066CFAD /* zem36.png in Resources */,
 				C1563E301E6EA2820066CFAD /* zem46.png in Resources */,
 				C1563E031E6EA2820066CFAD /* 1.gif in Resources */,
+				C1FFF5941E84F05F00F765C0 /* WebViewJavascriptBridge.js in Resources */,
 				C1563E531E6EA2820066CFAD /* zem78.png in Resources */,
 				C1563D641E6E48700066CFAD /* Main.storyboard in Resources */,
 				C1B114961E8367A700041B25 /* IDMPBLocalizations.bundle in Resources */,
 				C1563E591E6EA2820066CFAD /* expression_custom.plist in Resources */,
 				C1563E3E1E6EA2820066CFAD /* zem59.png in Resources */,
 				C1563E2B1E6EA2820066CFAD /* zem41.png in Resources */,
+				C1FFF58A1E84F05F00F765C0 /* focusdeatail.html in Resources */,
 				C1563E2A1E6EA2820066CFAD /* zem40.png in Resources */,
 				C1563E291E6EA2820066CFAD /* zem4.png in Resources */,
 				C1563E4C1E6EA2820066CFAD /* zem71.png in Resources */,
 				C1563E261E6EA2820066CFAD /* zem37.png in Resources */,
+				C1FFF5891E84F05F00F765C0 /* style.css in Resources */,
 				C1563E391E6EA2820066CFAD /* zem54.png in Resources */,
 				C1563E3C1E6EA2820066CFAD /* zem57.png in Resources */,
 				C1563E2E1E6EA2820066CFAD /* zem44.png in Resources */,
+				C1FFF5811E84F05F00F765C0 /* .name in Resources */,
 				C1563E081E6EA2820066CFAD /* zem10.png in Resources */,
+				C1FFF5881E84F05F00F765C0 /* workspace.xml in Resources */,
 				C1563E161E6EA2820066CFAD /* zem22.png in Resources */,
 				C1563E581E6EA2820066CFAD /* expression.plist in Resources */,
 				C1563E151E6EA2820066CFAD /* zem21.png in Resources */,
 				C1563E061E6EA2820066CFAD /* 4.gif in Resources */,
 				C1563E4B1E6EA2820066CFAD /* zem70.png in Resources */,
+				C1FFF58E1E84F05F00F765C0 /* focus_wenzhang.png in Resources */,
 				C1563E471E6EA2820066CFAD /* zem67.png in Resources */,
 				C1563E211E6EA2820066CFAD /* zem32.png in Resources */,
+				C1FFF5931E84F05F00F765C0 /* jquery-2.1.3.min.js in Resources */,
 				C1563E241E6EA2820066CFAD /* zem35.png in Resources */,
+				C1FFF5871E84F05F00F765C0 /* vcs.xml in Resources */,
 				C1563E271E6EA2820066CFAD /* zem38.png in Resources */,
 				C1563E1B1E6EA2820066CFAD /* zem27.png in Resources */,
 				C1563E1A1E6EA2820066CFAD /* zem26.png in Resources */,
@@ -1352,6 +1498,7 @@
 				C1563E4A1E6EA2820066CFAD /* zem7.png in Resources */,
 				C1563E3F1E6EA2820066CFAD /* zem6.png in Resources */,
 				C1563E0F1E6EA2820066CFAD /* zem16.png in Resources */,
+				C1FFF5901E84F05F00F765C0 /* focus_yidong.png in Resources */,
 				C1B6D4B61E7A3C8B00EDAF86 /* bgImage_HL@2x.png in Resources */,
 				C1563E501E6EA2820066CFAD /* zem75.png in Resources */,
 				C1563E1C1E6EA2820066CFAD /* zem28.png in Resources */,
@@ -1453,6 +1600,7 @@
 				C1B112641E825D3300041B25 /* UIImageView+AFNetworking.m in Sources */,
 				C1B6D4221E7155C200EDAF86 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				C1B114801E83678B00041B25 /* UIImage+MultiFormat.m in Sources */,
+				C1FFF5991E84F12D00F765C0 /* LXJBasicViewController.m in Sources */,
 				C1563DA11E6E935A0066CFAD /* LXJDynamicCell.m in Sources */,
 				C1B6D4211E7155C200EDAF86 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				C1B1126F1E825DBA00041B25 /* LICENSE.md in Sources */,
@@ -1464,7 +1612,6 @@
 				C1B6D41F1E7155C200EDAF86 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				C1B112B31E825DD200041B25 /* POPAnimator.mm in Sources */,
 				C1B6D4101E714AD900EDAF86 /* UIScrollView+MJExtension.m in Sources */,
-				C1B6D4271E7245C700EDAF86 /* LXJViewController.m in Sources */,
 				C1563D5E1E6E48700066CFAD /* AppDelegate.m in Sources */,
 				C1B1125F1E825D3300041B25 /* README.md in Sources */,
 				C1B112651E825D3300041B25 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1473,6 +1620,7 @@
 				C1FFF4EC1E83A70900F765C0 /* MBProgressHUD+LDF.m in Sources */,
 				C1B112591E825D3300041B25 /* AFSecurityPolicy.m in Sources */,
 				C1B1125D1E825D3300041B25 /* AFURLSessionManager.m in Sources */,
+				C1FFF59F1E84F45400F765C0 /* LXJWebViewController.m in Sources */,
 				C1B6D40D1E714AD900EDAF86 /* MJRefreshConst.m in Sources */,
 				C1B112561E825D3300041B25 /* AFHTTPRequestOperationManager.m in Sources */,
 				C1B1149A1E8367A700041B25 /* IDMTapDetectingImageView.m in Sources */,
@@ -1480,6 +1628,7 @@
 				C1B6D4121E714AD900EDAF86 /* UIView+MJExtension.m in Sources */,
 				C1B1125C1E825D3300041B25 /* AFURLResponseSerialization.m in Sources */,
 				C1B112B41E825DD200041B25 /* POPBasicAnimation.mm in Sources */,
+				C1FFF59C1E84F26C00F765C0 /* LXJBasicWebViewController.m in Sources */,
 				C1563E5C1E6EA2820066CFAD /* MLEmojiLabel.m in Sources */,
 				C1B112621E825D3300041B25 /* UIAlertView+AFNetworking.m in Sources */,
 				C1B1147B1E83678B00041B25 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1510,6 +1659,7 @@
 				C1B112BC1E825DD200041B25 /* POPSpringAnimation.mm in Sources */,
 				C1B112B81E825DD200041B25 /* POPGeometry.mm in Sources */,
 				C1B112B91E825DD200041B25 /* POPLayerExtras.mm in Sources */,
+				C1FFF5961E84F05F00F765C0 /* WebViewJavascriptBridge.m in Sources */,
 				C1B114991E8367A700041B25 /* IDMPhotoBrowser.m in Sources */,
 				C1B112AF1E825DD200041B25 /* POPAnimationEvent.mm in Sources */,
 				C1B112AE1E825DD200041B25 /* POPAnimation.mm in Sources */,

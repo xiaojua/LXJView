@@ -14,7 +14,7 @@
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "LCActionSheet.h"
 #import "IDMPhotoBrowser.h"
-
+#import "LXJWebViewController.h"
 
 #define Tag_MyReplySheetShow 0x01
 #define Tag_LongPressTextSheetShow 0x02
@@ -189,6 +189,18 @@
     
      
 }
+/* 点击url */
+- (void)onpressUrl:(NSURL *)url{
+    LXJWebViewController *vc = [LXJWebViewController new];
+    NSString *urlStr = url.absoluteString;
+    if ([urlStr hasPrefix:@"https://"] || [urlStr hasPrefix:@"http://"]) {
+        vc.url = urlStr;
+    }else{
+        vc.url = [NSString stringWithFormat:@"http://%@", urlStr];
+    }
+    [_hvc.navigationController pushViewController:vc animated:YES];
+}
+
 
 #pragma mark - LCActionSheetDelegate
 - (void)actionSheet:(LCActionSheet *)actionSheet didClickedButtonAtIndex:(NSInteger)buttonIndex{

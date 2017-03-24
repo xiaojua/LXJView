@@ -20,8 +20,8 @@
 - (void)onlongPressImageView:(UIImageView *)imageView onDynamicCell:(LXJDynamicCell *)cell;
 /* 点击图片ImageView */
 - (void)onpressImageView:(UIImageView *)imageView onDynamicCell:(LXJDynamicCell *)cell;
-
-
+/* 点击url */
+- (void)onpressUrl:(NSURL *)url;
 
 @end
 

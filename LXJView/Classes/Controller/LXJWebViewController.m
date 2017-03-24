@@ -1,30 +1,36 @@
 //
-//  LXJViewController.m
+//  LXJWebViewController.m
 //  LXJView
 //
-//  Created by xiaojuan on 17/3/10.
+//  Created by xiaojuan on 17/3/24.
 //  Copyright © 2017年 xiaojuan. All rights reserved.
 //
 
-#import "LXJViewController.h"
-#import "UIImageView+WebCache.h"
+#import "LXJWebViewController.h"
 
-@interface LXJViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@interface LXJWebViewController ()
 
 @end
 
-@implementation LXJViewController
+@implementation LXJWebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://tp1.sinaimg.cn/1618051664/50/5735009977/0"]];
+    self.navigationController.title = @"网页";
+    
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    
+    self.webUrl = self.url;
+    [self loadWebView];
     
     
-    
-    
+}
+
+
+- (void)goBack{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

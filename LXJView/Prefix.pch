@@ -16,7 +16,8 @@
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 #define SCREEN_H [UIScreen mainScreen].bounds.size.height
 
-
+#define kNavH 64.0
+#define kTabbarH 49.0
 
 #ifdef __OBJC__
 
@@ -25,6 +26,7 @@
 #import "MBProgressHUD.h"
 #import "UIView+LXJHUD.h"
 
+#import "WebViewJavascriptBridge.h"
 
 #endif
 
