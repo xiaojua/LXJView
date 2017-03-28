@@ -225,6 +225,7 @@
 		C1FFF5991E84F12D00F765C0 /* LXJBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF5981E84F12D00F765C0 /* LXJBasicViewController.m */; };
 		C1FFF59C1E84F26C00F765C0 /* LXJBasicWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF59B1E84F26C00F765C0 /* LXJBasicWebViewController.m */; };
 		C1FFF59F1E84F45400F765C0 /* LXJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF59E1E84F45400F765C0 /* LXJWebViewController.m */; };
+		C1FFF5E71E8A334300F765C0 /* LXJHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FFF5E61E8A334300F765C0 /* LXJHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -576,6 +577,8 @@
 		C1FFF59B1E84F26C00F765C0 /* LXJBasicWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXJBasicWebViewController.m; sourceTree = "<group>"; };
 		C1FFF59D1E84F45400F765C0 /* LXJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXJWebViewController.h; sourceTree = "<group>"; };
 		C1FFF59E1E84F45400F765C0 /* LXJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXJWebViewController.m; sourceTree = "<group>"; };
+		C1FFF5E51E8A334300F765C0 /* LXJHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXJHeaderView.h; sourceTree = "<group>"; };
+		C1FFF5E61E8A334300F765C0 /* LXJHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXJHeaderView.m; sourceTree = "<group>"; };
 		CBE0FAD0A3E27FC9A51E3BB7 /* Pods-LXJView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXJView.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXJView/Pods-LXJView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -749,6 +752,8 @@
 				C1563DA01E6E935A0066CFAD /* LXJDynamicCell.m */,
 				C1B6D3F71E71433100EDAF86 /* LXJZoneView.h */,
 				C1B6D3F81E71433100EDAF86 /* LXJZoneView.m */,
+				C1FFF5E51E8A334300F765C0 /* LXJHeaderView.h */,
+				C1FFF5E61E8A334300F765C0 /* LXJHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1618,6 +1623,7 @@
 				C1B112B51E825DD200041B25 /* POPCGUtils.mm in Sources */,
 				C1B114831E83678B00041B25 /* UIView+WebCacheOperation.m in Sources */,
 				C1FFF4EC1E83A70900F765C0 /* MBProgressHUD+LDF.m in Sources */,
+				C1FFF5E71E8A334300F765C0 /* LXJHeaderView.m in Sources */,
 				C1B112591E825D3300041B25 /* AFSecurityPolicy.m in Sources */,
 				C1B1125D1E825D3300041B25 /* AFURLSessionManager.m in Sources */,
 				C1FFF59F1E84F45400F765C0 /* LXJWebViewController.m in Sources */,

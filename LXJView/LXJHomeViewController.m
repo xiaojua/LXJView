@@ -10,10 +10,14 @@
 #import "LXJZoneView.h"
 #import "LXJGetData.h"
 #import "Masonry.h"
+#import "LXJHeaderView.h"
+
 
 @interface LXJHomeViewController ()
 
 @property (nonatomic, strong) LXJZoneView *zoneView;
+
+@property (strong, nonatomic) LXJHeaderView *headerView;
 
 @end
 
@@ -41,10 +45,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"朋友圈";
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(getPhotos)];
-    self.navigationItem.rightBarButtonItem = rightItem;
+    //self.title = @"朋友圈";
     [self getDatasource];
+    
+    //初始化headerView
+    [self initWithHeaderView];
+    
+    
+    
 }
 
 - (void)getDatasource{
@@ -53,11 +61,11 @@
     self.zoneView.zoneInfo = arr;
     
 }
-
-- (void)getPhotos{
-    
+- (void)initWithHeaderView{
+    self.headerView = [[LXJHeaderView alloc]initWithFrame:CGRectMake((SCREEN_W - 80)/2, 12, 40, 40)];
+    self.navigationItem.titleView = self.headerView;
+    self.headerView.basicVc = self;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
