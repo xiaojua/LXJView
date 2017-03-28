@@ -51,7 +51,7 @@
     //初始化headerView
     [self initWithHeaderView];
     
-    
+    NSLog(@"%@", NSHomeDirectory());
     
 }
 

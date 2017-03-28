@@ -58,6 +58,9 @@
 - (UIImage *)returnImageWithfilePath{
     NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:kFilePath];
     UIImage *image = [UIImage imageWithContentsOfFile:filePath];
+    if (!image) {
+        image = [UIImage imageNamed:@"aa"];
+    }
     return image;
 }
 
@@ -101,7 +104,7 @@
         [weakSelf.basicVc presentViewController:weakSelf.picker animated:YES completion:nil];
     }];
     UIAlertAction *save = [UIAlertAction actionWithTitle:@"保存图片" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self saveImageToPhotoLibrary];
+        [self saveImageToPhotoLibraryWithImg:nil];
     }];
     UIAlertAction *cancle = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     
@@ -115,8 +118,13 @@
 }
 
 /* 保存img到本地相册 */
-- (void)saveImageToPhotoLibrary{
-    UIImageWriteToSavedPhotosAlbum([self returnImageWithfilePath], self, @selector(image:didfinishSaveImgWithError:contextInfo:), nil);
+- (void)saveImageToPhotoLibraryWithImg:(UIImage *)image{
+    if (image) {
+        UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didfinishSaveImgWithError:contextInfo:), nil);
+    }else{
+        UIImageWriteToSavedPhotosAlbum([self returnImageWithfilePath], self, @selector(image:didfinishSaveImgWithError:contextInfo:), nil);
+    }
+    
 }
 - (void)image:(UIImage *)image didfinishSaveImgWithError:(NSError *)error contextInfo:(void *)info{
     if (!error) {
@@ -134,7 +142,7 @@
     self.imageView.image = image;
     
     if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) {
-        [self saveImageToPhotoLibrary];
+        [self saveImageToPhotoLibraryWithImg:image];
         [self saveImageToDocuments:image];
         [self.picker dismissViewControllerAnimated:YES completion:nil];
         [self tapGrHideImage];
